@@ -1,15 +1,12 @@
 from flask import request, Flask
 import json
-import netifaces as ni
 
 app1 = Flask(__name__)
 
 
 @app1.route('/')
 def hello_world():
-    ni.ifaddresses('ens3')
-    ip = ni.ifaddresses('ens3')[ni.AF_INET][0]['addr']
-    return 'ip'
+    return 'hi'
 
 
 if __name__ == '__main__':
