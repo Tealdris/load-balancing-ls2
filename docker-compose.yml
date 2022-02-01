@@ -14,5 +14,5 @@ services:
     ports:
     - "8090:80"
     depends_on:
-      - app1
+      - app2
 
