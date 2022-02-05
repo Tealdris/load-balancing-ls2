@@ -1,13 +1,13 @@
 version: '3'
 services:   
-  app1:
-    image: app2
+  app2:
+    image: app2:latest
     build: ./app2
     ports:
     - "5000:5000"
     deploy:
       mode: replicated
-      replicas: 14
+      replicas: 1
   nginx:
     image: nginx
     build: ./nginx 
