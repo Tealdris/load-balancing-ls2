@@ -1,19 +1,12 @@
 version: '3'
 services:   
   app2:
-    image: app2:latest
+    image: app2
     build: ./app2
     ports:
     - "5000:5000"
-    deploy:
-      mode: replicated
-      replicas: 1
   nginx:
     image: nginx
     build: ./nginx 
     ports:
     - "8090:80"
-
-volumes:
-    db_data: {}
-    wordpress_data: {}
