@@ -9,7 +9,7 @@ app1 = Flask(__name__)
 @app1.route('/')
 def hello_world():
     date = datetime.now()
-    return (str(datetime.now()))
+    return (str(datetime.utcnow()))
 
 
 if __name__ == '__main__':
