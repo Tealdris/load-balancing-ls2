@@ -7,7 +7,7 @@ app1 = Flask(__name__)
 
 @app1.route('/')
 def hello_world():
-    return ()'Hello to SNE family! Time is: ', datetime.datetime.now())
+    return ('Hello to SNE family! Time is: ', datetime.datetime.now())
 
 
 if __name__ == '__main__':
