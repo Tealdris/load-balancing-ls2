@@ -1,12 +1,13 @@
 from flask import request, Flask
 import json
+import datetime
 
 app1 = Flask(__name__)
 
 
 @app1.route('/')
 def hello_world():
-    return 'hi'
+    return ()'Hello to SNE family! Time is: ', datetime.datetime.now())
 
 
 if __name__ == '__main__':
